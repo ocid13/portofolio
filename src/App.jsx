@@ -1,6 +1,6 @@
 import './App.css'
 import Navbar from './components/navbar'
-import HeroSection from './components/herosection'
+import HomeSection from './components/homeSection'
 
 function App() {
 
@@ -8,6 +8,7 @@ function App() {
     <>
       <div className='App'>
         <Navbar />
+        <HomeSection />
       </div>
     </>
   )
