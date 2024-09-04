@@ -1,6 +1,7 @@
 import React from "react";
 import 'boxicons';
 import guehh from '../assets/image/Rosyid.jpg'
+import con from '../assets/image/home.png'
 
 const HomeSection = () => {
   return (
@@ -18,7 +19,7 @@ const HomeSection = () => {
         <a href="#" className="btn">Download CV</a>
       </div>
       <div className="home-img">
-        <img src={guehh} alt="Gueh" />
+        <img src={con} alt="Gueh" />
       </div>
     </section>
   )
