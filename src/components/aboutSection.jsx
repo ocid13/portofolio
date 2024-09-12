@@ -1,5 +1,5 @@
 import React from "react";
-import abut from '../assets/image/about.png'
+import abut from '../assets/image/image2.png'
 
 const AboutSection = () => {
   return (
@@ -10,7 +10,10 @@ const AboutSection = () => {
       <div className="about-content">
         <h2 className="heading">About <span>Me</span></h2>
         <h3>Frontend Developer</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ducimus quaerat tenetur, qui obcaecati vitae eos iste maxime odit quisquam nemo eius ea recusandae hic optio soluta! Voluptate excepturi eveniet quo possimus, consequuntur porro, quasi magni voluptatem numquam architecto quod sapiente, et repudiandae qui rerum. Saepe!</p>
+        <p>I am a final semester student at Muhamdmmadiyah University of Jakarta, majoring in Informatics Engineering. 
+          I have a strong interest in pursuing a career as a Frontend Developer and possess basic skills in web programming, 
+          especially using JavaScript and the React library. My experience includes participating in the Independent Study Internship 
+          Program (MSIB) in batches 3 and 5.</p>
         <a href="#" className="btn">Read More</a>
       </div>
     </section>

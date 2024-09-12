@@ -8,12 +8,14 @@ const PortfolioSection = () => {
     {
       imgSrc: port1,
       title: 'Lezatara',
-      description: 'Lezatara adalah sebuah platform daring (website) yang bertujuan untuk memperkenalkan, melestarikan, dan membagikan kelezatan masakan Nusantara.'
+      description: 'Lezatara adalah sebuah platform daring (website) yang bertujuan untuk memperkenalkan, melestarikan, dan membagikan kelezatan masakan Nusantara.',
+      link: 'https://lezatara.netlify.app/',
     },
     {
       imgSrc: port2,
       title: 'Bantu Si Liar',
       description: 'Bantu Si Liar merupakan sebuah aplikasi berbasis website yang berfungsi sebagai sumber informasi sekaligus media untuk melaporkan apabila seseorang menemukan hewan liar yang tidak memiliki tempat tinggal, yang berkeliaran tanpa pemilik atau hewan peliharaan yang hilang',
+      link: 'https://bantu-si-liar.netlify.app/',
     },
     {
       imgSrc: port1,
@@ -32,7 +34,9 @@ const PortfolioSection = () => {
             <div className="portfolio-layer">
               <h4>{project.title}</h4>
               <p>{project.description}</p>
-              <a href="#"><i className="bx bx-link-external"></i></a>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <i className="bx bx-link-external"></i>
+              </a>
             </div>
           </div>
         ))}

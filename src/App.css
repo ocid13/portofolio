@@ -53,6 +53,10 @@ section {
   cursor: default;
 }
 
+.logo:hover {
+  color: var(--main-color);
+}
+
 .navbar a {
   font-size: 1.7rem;
   color: var(--text-color);
@@ -80,8 +84,21 @@ section {
 
 .home-img img {
   width: 40vw; /* Sesuaikan lebar gambar dengan viewport */
-  max-width: 400px; /* Batasin lebar maksimal gambar */
+  max-width: 460px; /* Batasin lebar maksimal gambar */
   border-radius: 20px; /* Tambahin border-radius biar kelihatan lebih smooth */
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .home-content {
@@ -276,4 +293,80 @@ span {
 .portfolio-layer a i {
   font-size: 2rem;
   color: black;
+}
+
+.contact {
+  background: var(--sec-bg-color);
+}
+
+.contact h2 {
+  margin-bottom: 2rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--bg-color);
+  border-radius: .8rem;
+  margin: .7rem 0;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+}
+
+.footer-text {
+  font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  background: var(--main-color);
+  border-radius: .8rem;
+  transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--bg-color);
 }
