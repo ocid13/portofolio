@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import 'boxicons';
 import pphome from '../assets/image/image1.png';
-import resume from '../assets/cv.pdf';
+import resume from '../assets/cv2.pdf';
 import Typed from "typed.js";
 
 const HomeSection = () => {
